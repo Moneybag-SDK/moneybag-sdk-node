@@ -24,7 +24,10 @@
     "nodejs",
     "typescript"
   ],
-  "author": "Moneybag",
+  "author": {
+    "name": "Mahabubu Hasan",
+    "email": "mahabubul.dev@gmail.com"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
