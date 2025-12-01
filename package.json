@@ -1,0 +1,49 @@
+{
+  "name": "@moneybag/sdk",
+  "version": "1.0.0-beta.1",
+  "description": "Official Node.js SDK for Moneybag Payment Gateway",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "moneybag",
+    "payment",
+    "gateway",
+    "sdk",
+    "nodejs",
+    "typescript"
+  ],
+  "author": "Moneybag",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moneybag/moneybag-sdk-node.git"
+  },
+  "homepage": "https://github.com/moneybag/moneybag-sdk-node#readme",
+  "bugs": {
+    "url": "https://github.com/moneybag/moneybag-sdk-node/issues"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.38.0",
+    "@typescript-eslint/parser": "^8.38.0",
+    "axios": "^1.11.0",
+    "eslint": "^9.32.0",
+    "jest": "^30.0.5",
+    "prettier": "^3.6.2",
+    "ts-jest": "^29.4.0",
+    "typescript": "^5.8.3"
+  }
+}
